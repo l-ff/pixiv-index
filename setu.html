@@ -26,7 +26,7 @@ function getimg(){
             $("#title").html(data["title"]);
             $("#author").html("<a href=\"https://www.pixiv.net/users/" + data["uid"] + "\">" + data["author"] + "</a>");
             $("#tags").html(data["tags"].join(", "));
-            $("img").attr("src", "https://pixiv.mayx.eu.org" + data["url"]);
+            $("img").attr("src", "https://i.pixiv.re" + data["url"]); // https://pixiv.mayx.eu.org
             $("#uploadDate").html(new Date(data["uploadDate"]).toLocaleString());
         });
     }, 500);
@@ -40,3 +40,4 @@ function getindex(){
 }
 getindex();
 </script>
+
